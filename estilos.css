@@ -12,6 +12,54 @@ body {
     margin     : 0;
 }
 
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size       : 1.25em;
+    font-weight     : bold;
+    padding         : 10px 30px;
+    border-radius   : 5px;
+    border          : 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow      : 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color           : white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.container {
+    max-width: 1400px;
+    margin   : auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
 header {
     background-color: rgb(245, 245, 245);
 
@@ -21,4 +69,454 @@ header .logo img {
     margin   : 0;
     max-width: 50px;
 
+}
+
+header .container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+header nav {
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding        : 5px 12px;
+    text-decoration: none;
+    font-weight    : bold;
+    color          : black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+    flex-direction : column;
+    height         : 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('./assets/pizzas.jpg');
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#somos-proya .container {
+    text-align: center;
+    padding   : 200px 12px;
+}
+
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
+    color           : white;
+    text-align      : center;
+}
+
+#nuestros-productos .container {
+    padding: 150px 12px;
+}
+
+#nuestros-productos h2 {
+    margin-top: 0;
+    font-size : 3.2em;
+}
+
+#nuestros-productos p {
+    display: none;
+}
+
+#nuestros-productos .carta {
+    background-position: center center;
+    background-size    : cover;
+    padding            : 50px 0px;
+    margin             : 30px;
+    border-radius      : 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("./assets/baristas.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("./assets/cake.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("./assets/helados.webp");
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding   : 250px 12px;
+}
+
+#caracteristicas li {
+    margin     : 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    text-align      : center;
+    background-color: rgb(30, 30, 30);
+    color           : white;
+    height          : 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+
+/* contacto */
+.contacto .datos {
+    padding            : 5.625rem 0 11.875rem 0;
+    position           : relative;
+    background-image   : url('./assets/barra.png');
+    background-size    : cover;
+    background-position: center;
+    background-repeat  : no-repeat;
+}
+
+.contacto .datos .overlay {
+    position  : absolute;
+    width     : 100%;
+    height    : 100%;
+    background: rgba(20, 22, 24, 0.3);
+    top       : 0;
+    z-index   : 1;
+}
+
+.contacto .datos .container {
+    position               : relative;
+    z-index                : 2;
+    display                : -webkit-box;
+    display                : -webkit-flex;
+    display                : -ms-flexbox;
+    display                : flex;
+    -webkit-box-pack       : justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack          : justify;
+    justify-content        : space-between;
+    -webkit-flex-wrap      : wrap;
+    -ms-flex-wrap          : wrap;
+    flex-wrap              : wrap;
+}
+
+.contacto .datos .container .blurb {
+    background: #fff;
+    border    : 6px double #eaeaea;
+    padding   : 2.25rem;
+    text-align: center;
+    width     : 25%;
+}
+
+.contacto .datos .container .blurb h3 {
+    font-size    : 1.5rem;
+    font-weight  : 400;
+    line-height  : 2.6875rem;
+    margin-bottom: 1.125rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.contacto .datos .container .blurb p {
+    font-size: 1rem;
+    color    : #777777;
+}
+
+.contacto .formulario {
+    position  : relative;
+    z-index   : 3;
+    background: #fff;
+    max-width : 40.625rem;
+    margin    : 0 auto;
+    padding   : 2.25rem;
+    margin-top: -6.25rem;
+    width     : 90%;
+}
+
+.contacto .formulario .formulario_contacto .input-group {
+    position     : relative;
+    margin-bottom: 32px;
+}
+
+.contacto .formulario .formulario_contacto .input-group input[type="text"],
+.contacto .formulario .formulario_contacto .input-group input[type="email"],
+.contacto .formulario .formulario_contacto .input-group textarea {
+    font-family   : 'Poppins';
+    font-size     : 16px;
+    color         : #303133;
+    width         : 100%;
+    outline       : none;
+    padding       : 15px 0;
+    background    : none;
+    border        : none;
+    border-bottom : 2px solid rgba(180, 151, 90, 0.5);
+    vertical-align: top;
+}
+
+.contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
+.contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
+.contacto .formulario .formulario_contacto .input-group textarea:focus {
+    outline      : none;
+    border-bottom: 2px solid #b4975a;
+}
+
+.contacto .formulario .formulario_contacto .input-group textarea {
+    max-width : 100%;
+    max-height: 10.25rem;
+    min-height: 5.125rem;
+    min-width : 100%;
+}
+
+.contacto .formulario .formulario_contacto .input-group label {
+    color      : #777;
+    font-family: 'Poppins';
+}
+
+.contacto .formulario .formulario_contacto .input-group label.label {
+    /* position          : absolute; */
+    top               : 16px;
+    left              : 0;
+    font-size         : 1rem;
+    line-height       : 1rem;
+    margin-left       : 1rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.contacto .formulario .formulario_contacto .input-group label.label.active {
+    top        : -12px;
+    margin-left: 0;
+    font-size  : 12px;
+    line-height: 12px;
+    color      : #777;
+}
+
+.contacto .formulario .formulario_contacto .input-group .error {
+    position   : absolute;
+    font-family: 'Poppins';
+    font-size  : 0.875rem;
+}
+
+.contacto .formulario .formulario_contacto input[type="submit"] {
+    font-family       : 'Poppins';
+    background        : #b4975a;
+    color             : #fff;
+    border-radius     : 1px;
+    border            : 2px solid #fff;
+    cursor            : pointer;
+    display           : block;
+    margin            : 0 auto;
+    margin-top        : 3.125rem;
+    padding           : 15px;
+    width             : 20%;
+    outline           : none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.contacto .formulario .formulario_contacto input[type="submit"]:hover {
+    background: #977c44;
+}
+
+/* Fin de contacto */
+
+footer {
+    background-color: rgb(30, 30, 30);
+}
+
+footer p {
+    margin : 0;
+    padding: 12px;
+    color  : rgb(100, 100, 100);
+}
+
+footer .container {
+    height         : 150px;
+    display        : flex;
+    justify-content: center;
+    align-items    : flex-end;
+}
+
+/* Media Queries */
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width   : 100%;
+    }
+
+    header .container {
+        flex-direction : row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right : 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-proya .container {
+        display        : flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto {
+        width          : 50%;
+        max-width      : 600px;
+        text-align     : initial;
+        padding-left   : 30px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container {
+        background-image   : url("./assets/cafe.png");
+        background-size    : cover;
+        background-position: center center;
+        height             : 500px;
+        width              : 400px;
+    }
+
+    #nuestros-productos .productos {
+        display        : flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p {
+        display      : block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h2 {
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta {
+        padding              : 50px;
+        background-size      : 100% 150px;
+        background-repeat    : no-repeat;
+        background-position-y: 0;
+        background-color     : rgba(50, 50, 50, 1);
+        box-shadow           : 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("./assets/baristas.jpg");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("./assets/cream.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("./assets/chefmujer.jpg");
+
+    }
+
+    #caracteristicas {
+        background-image   : url("./assets/Desayuno.jpg");
+        background-repeat  : no-repeat;
+        background-size    : 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #contacto .container .blurb {
+        padding        : 50px;
+        background-size: 100%;
+    }
+
+    #contacto h3 {
+        margin         : 0;
+        padding        : 0%;
+        display        : block;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
 }
