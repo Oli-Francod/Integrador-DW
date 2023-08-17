@@ -4,34 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Proba Ya!</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <!-- se modifico la P por una a con img -->
-        <a href="#" class="logo"> <img src="./assets/chef-logo.jpg" /></a>
-        <nav>
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">PY! App</a>
+
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="./assets/menu.png" class="menu-icono" alt="logo" />
+        </label>
+        <nav class="navbar">
           <a href="#somos-proya">Quienes Somos</a>
           <a href="#nuestros-productos">Nuestros Productos</a>
           <a href="#caracteristicas">Características</a>
         </nav>
       </div>
+
+      <div class="header-content container">
+        <h1>Proba Ya!</h1>
+        <p>
+          ¡Pedí Fácil y Rápido Ahora! Deleitate con Nuestras Pizzas y Empanadas,
+          Repletas de Sabor. Más de 30 Gustos Para Elegir. Podés Combinar 2
+          Mitades Diferentes para Armar Tu Pizza.
+        </p>
+        <a href="#contacto" class="btn-1">PEDILOS YA!</a>
+      </div>
     </header>
 
     <section id="hero">
       <h1>Elegimos los ingredientes <br />de primera Calidad</h1>
-      <button>PEDILOS YA!</button>
     </section>
 
     <section id="somos-proya">
       <div class="container">
-        <div class="img-container"></div>
+        <!-- <div class="img-container"></div> -->
 
         <div class="texto">
           <h2>Somos <span class="color-acento">ProbaYa!</span></h2>
           <p>
-            Con la app de delivery más usada de Latinoamérica, tu local puede
+            Somos la app de delivery más usada de Latinoamérica, tu local puede
             ser el local más elegido de tu zona. Súmate a la plataforma más
             grande y llega a miles de nuevos clientes.
           </p>
@@ -52,6 +69,7 @@
             </p>
             <button>+ Info</button>
           </div>
+
           <!-- Segunda carta -->
           <div class="carta">
             <h3>Heladeria</h3>
@@ -62,6 +80,7 @@
             </p>
             <button>+ Info</button>
           </div>
+
           <!-- Tercera carta -->
           <div class="carta">
             <h3>Catering</h3>
@@ -74,6 +93,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Caracteristicas -->
     <section id="caracteristicas">
       <div class="container">
         <ul>
@@ -85,27 +106,30 @@
       </div>
     </section>
 
-    <section id="final">
+    <section class="final">
       <h2>Listo para pedir?</h2>
-      <button>PEDILO YA!</button>
+      <a href="#contacto">PEDILO YA!</a>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contacto">
+    <section id="contacto">
       <div class="datos parallax">
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
         <div class="container">
           <div class="blurb">
             <h3>Escribenos</h3>
-            <p>pediloya@correo.com</p>
+            <p>
+              pediloya@correo.com <br />
+              15558889
+            </p>
           </div>
           <div class="blurb">
             <h3>Visitanos</h3>
-            <p>Calle Poe 123 #27 <br />Ciudad Bs As</p>
+            <p>Calle Poe 123 Ciudad Bs As</p>
           </div>
           <div class="blurb">
             <h3>Horario</h3>
-            <p>Martes a Domingo<br />11am - 12pm</p>
+            <p>Martes a Domingo 11am - 12pm</p>
           </div>
         </div>
       </div>
@@ -114,17 +138,17 @@
         <form action="" class="formulario_contacto" name="formulario_contacto">
           <div>
             <div class="input-group">
-              <input type="text" id="nombre" name="nombre" />
+              <input type="text" name="nombre" />
               <label class="label" for="nombre">Nombre</label>
             </div>
 
             <div class="input-group">
-              <input type="text" id="email" name="email" />
+              <input type="text" name="email" />
               <label class="label" for="email">Correo electronico</label>
             </div>
 
             <div class="input-group">
-              <textarea name="mensaje" id="mensaje"></textarea>
+              <textarea name="mensaje"></textarea>
               <label class="label" for="mensaje">Mensaje</label>
             </div>
             <input type="submit" value="Enviar" />
@@ -132,7 +156,10 @@
         </form>
       </div>
     </section>
+
     <!-- Cierre contacto -->
+
+    <!-- Footer -->
 
     <footer>
       <div class="container">
